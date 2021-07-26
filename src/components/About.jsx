@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import AboutImage from "../assets/images/illustration-working.svg";
+import Button from "./UI/styledButton";
 
 const Wrapper = styled.div`
   padding: 8rem;
@@ -29,41 +30,6 @@ const ContentWrapper = styled.div`
 	}
 `;
 
-const ImgWrapper = styled.div`
-  order: 2;
-  margin-right: -20rem;
-
-  @media (max-width: 1280px) {
-		margin-right: -14rem;
-	}
-	@media (max-width: 700px) {
-		margin-right: -22rem;
-		order: 1;
-	}
-	@media (max-width: 450px) {
-		margin-right: -12rem;
-		order: 1;
-	}
-
-`;
-
-const AboutImg = styled.img`
-  width: 44rem;
-
-  @media (max-width: 1280px) {
-		width: 35rem;
-	}
-	@media (max-width: 1000px) {
-		width: 28rem;
-	}
-	@media (max-width: 700px) {
-		width: 45rem;
-		margin-bottom: 2rem;
-	}
-	@media (max-width: 450px) {
-		width: 30rem;
-	}
-`;
 
 const Heading = styled.h1`
   color: #232127;
@@ -107,6 +73,52 @@ const SubHeading = styled.h3`
 		font-size: 1rem;
 	}
 `;
+const GetStartedbtn = styled(Button)`
+  padding: 0.8rem 2.6rem;
+  width: fit-content;
+  
+  @media (max-width: 700px) {
+    padding: 0.6rem 2.4rem;
+		margin: 1rem auto;
+		font-size: 1.25rem;
+	}
+`;
+
+const ImgWrapper = styled.div`
+  order: 2;
+  margin-right: -20rem;
+
+  @media (max-width: 1280px) {
+		margin-right: -14rem;
+	}
+	@media (max-width: 700px) {
+		margin-right: -22rem;
+		order: 1;
+	}
+	@media (max-width: 450px) {
+		margin-right: -12rem;
+		order: 1;
+	}
+
+`;
+
+const AboutImg = styled.img`
+  width: 44rem;
+
+  @media (max-width: 1280px) {
+		width: 35rem;
+	}
+	@media (max-width: 1000px) {
+		width: 28rem;
+	}
+	@media (max-width: 700px) {
+		width: 45rem;
+		margin-bottom: 2rem;
+	}
+	@media (max-width: 450px) {
+		width: 30rem;
+	}
+`;
 
 const About = () => {
 
@@ -115,6 +127,7 @@ const About = () => {
       <ContentWrapper>
         <Heading>More than just shorter links</Heading>
         <SubHeading>Build your own brand's recognition and get detailed insights on how your links are performing. </SubHeading>
+        <GetStartedbtn>Get Started</GetStartedbtn>
       </ContentWrapper>
       <ImgWrapper>
         <AboutImg src={AboutImage} alt="About Image" />

@@ -152,6 +152,12 @@ const MenuSignupBtn = styled(SignupBtn)`
     padding: 0.8rem 2rem;
 `;
 
+const LogoWrapper = styled.img`
+  padding: 0.5rem;
+  height: 1.5rem;
+  width: 6rem;
+`;
+
 const Navbar = () => {
 
   const [showMenu, setShowMenu] = useState(false);
@@ -169,7 +175,7 @@ const Navbar = () => {
     <Wrapper>
       <Nav>
         <LeftPart>
-          <img src={Logo} alt="dlogo"/>
+          <LogoWrapper src={Logo} alt="logo"/>
           <OptionList>
             <Option>Features</Option>
             <Option>Pricing</Option>

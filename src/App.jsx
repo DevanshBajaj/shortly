@@ -3,6 +3,7 @@ import About from './components/Header/About';
 import Shortener from './components/Shortener/Shortener';
 import Stats from './components/Content/Stats';
 import BoostLinks from './components/Footer/BoostLinks';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
        <Shortener />
        <Stats />
        <BoostLinks />
+       <Footer />
     </div>
   )
 }

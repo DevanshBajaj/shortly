@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Shortener from './components/Shortener/Shortener';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div>
        <Navbar />
        <About />
+       <Shortener />
     </div>
   )
 }

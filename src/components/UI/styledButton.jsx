@@ -11,12 +11,6 @@ const Button = styled.div`
   -moz-user-select: none;
 	-khtml-user-select: none;
 
-	/* @media (hover: hover) {
-		&:hover {
-			background-color: #9be3e2;
-		}
-	} */
-
 	&:active {
 		background-color: #9be3e2;
 	}

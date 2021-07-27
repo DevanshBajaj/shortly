@@ -44,7 +44,7 @@ const CyanLine = styled.div`
   background-color: #2acfcf;
   position: absolute;
   top: 45%;
-  width: 50%;
+  width: 40%;
   height: 0.5rem;
   border-radius: 0.3rem;
 

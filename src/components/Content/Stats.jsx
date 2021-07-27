@@ -4,9 +4,11 @@ const Wrapper = styled.div`
   background-color: #eff0f6;
   text-align: center;
   padding: 4rem 8rem;
+  padding-bottom: 8rem;
 
   @media (max-width: 768px) {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
+    padding-bottom: 6rem;
   }
 `;
 

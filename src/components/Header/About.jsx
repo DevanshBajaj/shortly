@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import AboutImage from "../assets/images/illustration-working.svg";
-import Button from "./UI/styledButton";
+import AboutImage from "../../assets/images/illustration-working.svg";
+import Button from "../UI/styledButton";
 
 const Wrapper = styled.div`
   padding: 8rem;

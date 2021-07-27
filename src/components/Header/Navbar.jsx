@@ -1,9 +1,9 @@
 import {useState} from 'react';
 
 import styled from "styled-components";
-import Button from "./UI/styledButton";
-import Logo from '../assets/images/logo.svg';
-import Hamburger from '../assets/images/Hamburger.svg'
+import Button from "../UI/styledButton";
+import Logo from '../../assets/images/logo.svg';
+import Hamburger from '../../assets/images/Hamburger.svg'
 
 const Wrapper = styled.div`
   margin: 0 5rem;

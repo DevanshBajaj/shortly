@@ -6,6 +6,9 @@ const PreviousUrls = styled.div`
 	padding: 1rem;
 	justify-content: space-between;
 	background-color: white;
+	box-shadow: 0px 0px 8px 4px rgba(191,191,191,0.12);
+	-webkit-box-shadow: 0px 0px 8px 4px rgba(191,191,191,0.12);
+	-moz-box-shadow: 0px 0px 8px 4px rgba(191,191,191,0.12);
 	color: #232127;
 	font-size: 1rem;
 	border-radius: 8px;
@@ -34,6 +37,7 @@ const OriginalUrlWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	overflow: hidden;
 `;
 
 const OriginalUrl = styled.span`
@@ -42,6 +46,7 @@ const OriginalUrl = styled.span`
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	text-overflow: ellipsis;
+
 	@media (max-width: 950px) {
 		overflow: hidden;
 		text-overflow: ellipsis;

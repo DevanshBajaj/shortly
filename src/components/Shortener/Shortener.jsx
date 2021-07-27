@@ -25,11 +25,12 @@ const InputWrapper = styled.div`
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	border-radius: 8px;
+	border-radius: 12px;
 	margin-top: -14.5rem;
 	display: flex;
 	justify-content: space-between;
 	padding: 4rem;
+	
 	@media (max-width: 700px) {
 		background-image: url('/src/assets/images/bg-shorten-mobile.svg');
 		width: calc(100% - 8rem);

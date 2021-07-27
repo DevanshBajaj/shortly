@@ -1,19 +1,20 @@
 import styled from "styled-components";
 import Button from "../UI/styledButton";
-
+import BoostDesktop from "../../assets/images/bg-boost-desktop.svg";
+import BoostMobile from "../../assets/images/bg-boost-mobile.svg";
 const Wrapper = styled.div`
 padding: 2rem 0;
 width: 100%;
 color: #fff;
 background-color: #3b3054;
-background-image: url("/src/assets/images/bg-boost-desktop.svg");
+background-image: url(${BoostDesktop});
 text-align: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 
 @media (max-width: 767px) {
-  background-image: url("/src/assets/images/bg-boost-mobile.svg");
+  background-image: url(${BoostMobile});
 }
 `;
 

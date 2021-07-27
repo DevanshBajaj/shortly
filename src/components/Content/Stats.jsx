@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import BrandLogo from '../../assets/images/icon-brand-recognition.svg';
+import DetailedRecords from '../../assets/images/icon-detailed-records.svg';
+import FullyCustomizable from '../../assets/images/icon-fully-customizable.svg';
 
 const Wrapper = styled.div`
   background-color: #eff0f6;
@@ -148,7 +151,7 @@ const Stats = () => {
           <CyanLine />
           <StatsCard>
             <ImageWrapper>
-              <img src='/src/assets/images/icon-brand-recognition.svg' alt="Logo" />
+              <img src={BrandLogo} alt="Logo" />
             </ImageWrapper>
             <h4>Brand Recognition</h4>
 
@@ -159,7 +162,7 @@ const Stats = () => {
           </StatsCard>
           <StatsCard id="second">
             <ImageWrapper>
-              <img src='/src/assets/images/icon-detailed-records.svg' alt="Logo" />
+              <img src={DetailedRecords} alt="Logo" />
             </ImageWrapper>
             <h4>Detailed Records</h4>
 
@@ -169,7 +172,7 @@ const Stats = () => {
           </StatsCard>
           <StatsCard id="third">
             <ImageWrapper>
-              <img src='/src/assets/images/icon-fully-customizable.svg' alt="Logo" />
+              <img src={FullyCustomizable} alt="Logo" />
             </ImageWrapper>
             <h4>Fully Customizable</h4>
 

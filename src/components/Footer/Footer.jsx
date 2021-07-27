@@ -26,7 +26,7 @@ const ContentWrapper = styled.div`
 
 `;
 const Logo = styled.svg`
-  padding: 2rem 2rem;
+  padding: 1.5rem 2rem;
 	fill: white;
   height: 4rem;
   width: 8rem;

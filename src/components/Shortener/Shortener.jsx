@@ -6,6 +6,8 @@ import Button from "../UI/styledButton";
 import BarLoader from 'react-spinners/BarLoader';
 import validUrl  from 'valid-url';
 import ShortenedList from "./ShortenedList";
+import ShortenImageDesktop from "../../assets/images/bg-shorten-desktop.svg";
+import ShortenImageMobile from "../../assets/images/bg-shorten-mobile.svg";
 
 const UrlShortenerWrapper = styled.section`
 	position: relative;
@@ -21,7 +23,7 @@ const InputWrapper = styled.div`
 	position: absolute;
 	width: calc(100% - 18rem);
 	background-color: #3b3054;
-	background-image: url('/src/assets/images/bg-shorten-desktop.svg');
+	background-image: url(${ShortenImageDesktop});
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -32,7 +34,7 @@ const InputWrapper = styled.div`
 	padding: 4rem;
 	
 	@media (max-width: 700px) {
-		background-image: url('/src/assets/images/bg-shorten-mobile.svg');
+		background-image: url(${ShortenImageMobile});
 		width: calc(100% - 8rem);
 		margin-top: -15.5rem;
 		padding: 2rem;

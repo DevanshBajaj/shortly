@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import  axios from "axios";
 import styled from "styled-components";
 import { css } from '@emotion/react'
@@ -135,8 +135,6 @@ const Shortener = () => {
   const [loading, setLoading] = useState(false)
 	const [shortUrls, setShortUrls] = useState([]);
 
-  const shortenUrlRef = useRef(null);
-
   const validURL = (url) => {
     if (!url) return 'Please add a link';
     if (!validUrl.isUri(url)) return 'Please provide a valid link!';
@@ -145,7 +143,6 @@ const Shortener = () => {
   
 	useEffect(() => {
     return () => {
-      console.log("cleaned up");
     };
   }, [])
 
@@ -161,24 +158,15 @@ const Shortener = () => {
       try {
         let res = await axios.get(`https://api.shrtco.de/v2/shorten?url=${url}`
         );
-        //setShortUrls({...shortUrls, originalUrl: url, links: [full_short_link] });
 				setShortUrls([...shortUrls, res.data.result]);
 				setLoading(false);
         setUrl('');
-				
 			} catch (exception) {
         setError('url not supported!');
         setLoading(false);
 			}
     }
   }
-
-
-
-  console.log(validURL(url))
-	console.log(typeof(shortUrls))
-	console.log(shortUrls)
-	console.log(url)
 
 	return (
     <UrlShortenerWrapper>
@@ -193,7 +181,6 @@ const Shortener = () => {
             onKeyDown={e => {
 							if (e.key == 'Enter') {
 								if (!loading) shortenUrl(url);
-                console.log(url);
 							}
 						}}
              />
@@ -221,7 +208,7 @@ const Shortener = () => {
 			{shortUrls.length ? (
 				<div>
 						{shortUrls.map((link) => (
-							<ShortenedList ref={shortenUrlRef} key={link.code} shrinkUrl1={link.full_short_link} shrinkUrl2={link.short_link3} orginalUrl={link.original_link} />
+							<ShortenedList key={link.code} shrinkUrl1={link.full_short_link} shrinkUrl2={link.full_short_link3} orginalUrl={link.original_link} />
 						))}
 				</div>
 			): (

@@ -59,7 +59,7 @@ const ShortenUrlWrapper = styled.div`
 	cursor: pointer;
 	align-items: start;
 	justify-content: space-between;
-
+	-webkit-tap-highlight-color: transparent;
 	@media (max-width: 950px) {
 		width: 100%;
 		flex-direction: column;

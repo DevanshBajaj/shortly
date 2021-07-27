@@ -33,7 +33,10 @@ const Logo = styled.svg`
 
   @media (max-width: 1300px) {
     padding: 2rem 0;
-}
+  }
+  @media (max-width: 700px) {
+		padding: 0.8rem 0;
+	}
 `;
 const FooterListWrapper = styled.div`
   display: flex;
@@ -47,6 +50,7 @@ const FooterListWrapper = styled.div`
 	@media (max-width: 700px) {
 		text-align: center;
 		flex-direction: column;
+    margin: 0;
 	}
 `; 
 const FooterList = styled.div`
@@ -56,20 +60,26 @@ const FooterList = styled.div`
 		margin: 0 2rem;
 	}
 	@media (max-width: 700px) {
-		margin: 1.5rem 0;
+		margin: 0.6rem 0;
 	}
 `;
 const ListHeading = styled.h3`
   color: white;
 
+  @media (max-width: 700px) {
+    margin: 1rem 0;
+}
 `;
 const ListItem = styled.p`
   color:#9e9aa7;
   cursor: pointer;
-
+  -webkit-tap-highlight-color: transparent;
   &:active {
     color: #2acfcf;
   }
+  @media (max-width: 700px) {
+    margin: 0.4rem 0;
+}
 `;
 const IconWrapper = styled.div`
   display: flex;
@@ -85,6 +95,7 @@ const IconWrapper = styled.div`
 const Icon = styled.svg`
   padding: 1rem;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   fill: #fff;
 
   &:active path {

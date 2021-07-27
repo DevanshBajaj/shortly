@@ -41,6 +41,7 @@ const Option = styled.div`
   display: flex;
   color: #9e9aa7;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   font-size: 1rem;
 
 	&:active {
@@ -58,7 +59,7 @@ const RightPart = styled.div`
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-
+  -webkit-tap-highlight-color: transparent;
   @media (max-width: 700px) { 
     display: none;
   }
@@ -69,7 +70,7 @@ const LoginBtn = styled.div `
   font-size: 1rem;
   margin: 0 1.5rem;
   cursor: pointer;
-
+  -webkit-tap-highlight-color: transparent;
   &:active {
 		color: #424242;
 	}
@@ -86,6 +87,7 @@ const SignupBtn = styled(Button)`
 const HamburgerIcon = styled.img`
   display:none;
   cursor:pointer;
+  -webkit-tap-highlight-color: transparent;
   width: 2rem;
 
   @media (max-width: 700px) {
@@ -125,6 +127,7 @@ const NavMenuList = styled.div`
   font-size: 1rem;
   margin: 1.8rem auto;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 
   &:active {
     color: #BDBDBD;

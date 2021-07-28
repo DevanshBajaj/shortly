@@ -5,19 +5,17 @@
 </br>
 
 ## Tech Stack
-This website was made for take home assignment for a company, I have used React to create this webapp and Vite JS is used for tooling.
-Styling components is mainly used for styling the website along with emotion css and react-spinners package. For the shortening function of the website, Axios is used to make HTTP request to shrtcode API.
-
+This website was made for take home assignment for [The Internet Folks](https://theinternetfolks.com/)
 
 ### Libraries
 - [React](https://reactjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Axios](https://axios-http.com/)
-- [Emotion CSS](https://emotion.sh/docs/introduction)
-- [Valid Url](https://www.npmjs.com/package/valid-url)
+- [Styled Components](https://styled-components.com/) is used to style the UI
+- [Axios](https://axios-http.com/) is used to make HTTP request to API
+- [Emotion CSS](https://emotion.sh/docs/introduction) is used to style the loader/react-spinner
+- [Valid Url](https://www.npmjs.com/package/valid-url) is used to validate URL entered by the user
 
 ### Build Tool
--[Vite JS](https://vitejs.dev/)
+[Vite JS](https://vitejs.dev/) is used for tooling as CRA replacement 
 
 </br>
 
@@ -29,6 +27,14 @@ yarn
 
 yarn dev
 ```
+</br>
+
+## To-Do
+- Accounts(auth)
+- More Functionality in shorten urls list like delete button (depending on the API)
+- Restructuring Website to look more like a product than product landing page
+
+</br>
 </br>
 
 # License

@@ -1,11 +1,13 @@
 <h1 align="center">Shortly</h1>
 
-<p align="center">An URL shortener Web App made using React with the help of <a href="https://shrtco.de/docs/">Shrtcode API</a></p>
+<p align="center">An URL shortener Web App made using React with the help of <a href="https://shrtco.de/docs/">Shrtcode API</a></p> 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/572e2ab0-5ab0-47de-98a8-61b295be5615/deploy-status)](https://app.netlify.com/sites/urlshortener-url/deploys)
 
 </br>
 
 ## Tech Stack
-This website was made for take home assignment for [The Internet Folks](https://theinternetfolks.com/)
+This website was made as take home assignment for [The Internet Folks](https://theinternetfolks.com/)
 
 ### Libraries
 - [React](https://reactjs.org/)

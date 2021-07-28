@@ -41,9 +41,7 @@ const OriginalUrlWrapper = styled.div`
 `;
 
 const OriginalUrl = styled.span`
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
+	display: unset;
 	overflow: hidden;
 	text-overflow: ellipsis;
 
@@ -77,7 +75,6 @@ const MultiUrlWrapper = styled.div`
 
 const ShortenUrl = styled.span`
 	color: #2acfcf;
-
 	@media (max-width: 950px) {
 		overflow: hidden;
 		text-overflow: ellipsis;
